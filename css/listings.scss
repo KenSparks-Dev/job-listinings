@@ -6,6 +6,8 @@
 }
 
 .listing {
+  display:flex;
+  flex-direction: column;
   font-size: 15px;
   width: 85%;
   padding: 30px 15px;
@@ -103,8 +105,16 @@
 
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+.listing {
+  display:flex;
+  flex-direction: row;
 
+  hr{
+  display:none
+  }
+}
+}
 // Large devices (desktops, 1024px and up)
 @media (min-width: 1024px) {}
 
