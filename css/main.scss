@@ -25,16 +25,35 @@ header {
   display: flex;
   width: 100%;
   justify-content: flex-start;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
 header img {
   width: 100%;
-  top: -10px;
 }
 
+.mobile-header {
+  display: initial;
+  background-color: $header-bg-color;
+
+}
+
+.desktop-header {
+  display: none;
+}
+
+
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .desktop-header {
+    display: initial;
+    background-color: $header-bg-color;
+  }
+}
 
 // Large devices (desktops, 1024px and up)
 @media (min-width: 1024px) {}
