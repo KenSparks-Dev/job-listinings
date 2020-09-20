@@ -1,185 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Job Listings</title>
-</head>
-<body>
-  <!-- Item Start -->
-  Photosnap
-  New!
-  Featured
-  Senior Frontend Developer
-  1d ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Senior
-  <!-- Languages -->
-  HTML
-  CSS
-  JavaScript
-  <!-- Item End -->
 
-  <!-- Item Start -->
-  Manage
-  New!
-  Featured
-  Fullstack Developer
-  1d ago
-  Part Time
-  Remote
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  Python
-  <!-- Tools -->
-  React
-  <!-- Item End -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spark Jobs | Listings</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/listings.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  </head>
 
-  <!-- Item Start -->
-  Account
-  New!
-  Junior Frontend Developer
-  2d ago
-  Part Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
+  <body>
 
-  <!-- Item Start -->
-  MyHome
-  Junior Frontend Developer
-  5d ago
-  Contract
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  CSS
-  JavaScript
-  <!-- Item End -->
+    <header>
+      <img class="mobile-header" src="images/bg-header-mobile.svg" alt="#">
+      <img class="desktop-header" src="images/bg-header-desktop.svg" alt="#">
+    </header>
 
-  <!-- Item Start -->
-  Loop Studios
-  Software Engineer
-  1w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Ruby
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
+    <div class="listing">
+      <div class="listing__img">
+        <img src="images/photosnap.svg" alt="photosnap" class="listing__logo">
+      </div>
+      <div class="listing__details">
+        <p class="listing__company">Photosnap</p>
+        <p class="listing__new" data-key="new">new!</p>
+        <p class="listing__featured" data-key="featured">featured</p>
+        <p class="listing__job">Senior Frontend Developer</p>
+        <p class="listing__status">
+          1d ago * Full Time * USA only
+        </p>
+      </div>
+      <hr>
+      <ul class="listing__skills">
+        <li data-key="frontend">Frontend</li>
+        <li data-key="senior">Senior</li>
+        <li data-key="html">HTML</li>
+        <li data-key="css">CSS</li>
+        <li data-key="javascript">Javascript</li>
+      </ul>
+    </div>
+    <!--listing-end-->
 
-  <!-- Item Start -->
-  FaceIt
-  Junior Backend Developer
-  2w ago
-  Full Time
-  UK only
-  <!-- Role -->
-  Backend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  Ruby
-  <!-- Tools -->
-  RoR
-  <!-- Item End -->
+    <div class="listing">
+      <div class="listing__img">
+        <img src="images/manage.svg" alt="manage logo" class="listing__logo">
+      </div>
+      <div class="listing__details">
+        <p class="listing__company">Manage</p>
+        <p class="listing__new" data-key="new">new!</p>
+        <p class="listing__featured" data-key="featured">featured</p>
+        <p class="listing__job">Fullstack Developer</p>
+        <p class="listing__status">
+          1d ago * Part Time * Remote
+        </p>
+      </div>
+      <hr>
+      <ul class="listing__skills">
+        <li data-key="fullstack">fullstack</li>
+        <li data-key="Midweight">Midweight</li>
+        <li data-key="python">python</li>
+        <li data-key="react">react</li>
+      </ul>
+    </div>
+    <!--listing-end-->
 
-  <!-- Item Start -->
-  Shortly
-  Junior Developer
-  2w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  HTML
-  JavaScript
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
+    <div class="listing">
+      <div class="listing__img">
+        <img src="images/account.svg" alt="account logo" class="listing__logo">
+      </div>
+      <div class="listing__details">
+        <p class="listing__company">Account</p>
+        <p class="listing__new" data-key="new">new!</p>
+        <p class="listing__job">Junior Frontend Developer</p>
+        <p class="listing__status">
+          2d ago * Part Time * USA only
+        </p>
+      </div>
+      <hr>
+      <ul class="listing__skills">
+        <li data-key="frontend">frontend</li>
+        <li data-key="junior">junior</li>
+        <li data-key="react">react</li>
+        <li data-key="sass">sass</li>
+        <li data-key="javascript">javascript</li>
+      </ul>
+    </div>
+    <!--listing-end-->
 
-  <!-- Item Start -->
-  Insure
-  Junior Frontend Developer
-  2w ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  Vue
-  Sass
-  <!-- Item End -->
+    <div class="listing">
+      <div class="listing__img">
+        <img src="images/myhome.svg" alt="my home logo" class="listing__logo">
+      </div>
+      <div class="listing__details">
+        <p class="listing__company">MyHome</p>
+        <p class="listing__job">Junior Frontend Developer</p>
+        <p class="listing__status">
+          5d ago * Contract * USA only
+        </p>
+      </div>
+      <hr>
+      <ul class="listing__skills">
+        <li data-key="frontend">frontend</li>
+        <li data-key="junior">junior</li>
+        <li data-key="css">CSS</li>
+        <li data-key="javascript">javascript</li>
+      </ul>
+    </div>
+    <!--listing-end-->
 
-  <!-- Item Start -->
-  Eyecam Co.
-  Full Stack Engineer
-  3w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Python
-  <!-- Tools -->
-  Django
-  <!-- Item End -->
+    <div class="listing">
+      <div class="listing__img">
+        <img src="images/loop-studios.svg" alt="loop studios logo" class="listing__logo">
+      </div>
+      <div class="listing__details">
+        <p class="listing__company">Loop Studios</p>
+        <p class="listing__job">Software Engineer</p>
+        <p class="listing__status">
+          1w ago * Full Time * Worldwide
+        </p>
+      </div>
+      <hr>
+      <ul class="listing__skills">
+        <li data-key="full stack">Full Stack</li>
+        <li data-key="midweight">midweight</li>
+        <li data-key="javascript">javascript</li>
+        <li data-key="sass">sass</li>
+        <li data-key="ruby">ruby</li>
+      </ul>
+    </div>
+    <!--listing-end-->
 
-  <!-- Item Start -->
-  The Air Filter Company
-  Front-end Dev
-  1mo ago
-  Part Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="listing">
+      <div class="listing__img">
+        <img src="images/faceit.svg" alt="face it logo" class="listing__logo">
+      </div>
+      <div class="listing__details">
+        <p class="listing__company">FaceIt</p>
+        <p class="listing__job">Junior Backend Developer</p>
+        <p class="listing__status">
+          2w ago * Full Time * UK only
+        </p>
+      </div>
+      <hr>
+      <ul class="listing__skills">
+        <li data-key="backend">backend</li>
+        <li data-key="junior">junior</li>
+        <li data-key="ruby">ruby</li>
+        <li data-key="ror">RoR</li>
+      </ul>
+    </div>
+    <!--listing-end-->
+
+    <div class="listing">
+      <div class="listing__img">
+        <img src="images/shortly.svg" alt="shortly logo" class="listing__logo">
+      </div>
+      <div class="listing__details">
+        <p class="listing__company">Shortly</p>
+        <p class="listing__job">Junior Developer</p>
+        <p class="listing__status">
+          2w ago * Full Time * Worldwide
+        </p>
+      </div>
+      <hr>
+      <ul class="listing__skills">
+        <li data-key="frontend">frontend</li>
+        <li data-key="junior">junior</li>
+        <li data-key="html">HTML</li>
+        <li data-key="sass">sass</li>
+        <li data-key="javascript">javascript</li>
+      </ul>
+    </div>
+    <!--listing-end-->
+
+    <div class="listing">
+      <div class="listing__img">
+        <img src="images/insure.svg" alt="insure logo" class="listing__logo">
+      </div>
+      <div class="listing__details">
+        <p class="listing__company">Insure</p>
+        <p class="listing__job">Junior Frontend Developer</p>
+        <p class="listing__status">
+          2w ago * Full Time * USA only
+        </p>
+      </div>
+      <hr>
+      <ul class="listing__skills">
+        <li data-key="frontend">frontend</li>
+        <li data-key="junior">junior</li>
+        <li data-key="vue">vue</li>
+        <li data-key="javascript">javascript</li>
+        <li data-key="sass">sass</li>
+      </ul>
+    </div>
+    <!--listing-end-->
+
+    <div class="listing">
+      <div class="listing__img">
+        <img src="images/eyecam-co.svg" alt="eyecam logo" class="listing__logo">
+      </div>
+      <div class="listing__details">
+        <p class="listing__company"></p>
+        <p class="listing__job">Full Stack Engieer</p>
+        <p class="listing__status">
+          3w ago * Full Time * Worldwide
+        </p>
+      </div>
+      <hr>
+      <ul class="listing__skills">
+        <li data-key="fullstack">fullstack</li>
+        <li data-key="midweight">midweight</li>
+        <li data-key="javascript">Javascript</li>
+        <li data-key="django">django</li>
+        <li data-key="python">python</li>
+      </ul>
+    </div>
+    <!--listing-end-->
+
+    <div class="listing">
+      <div class="listing__img">
+        <img src="images/the-air-filter-company.svg" alt="the air filter company logo" class="listing__logo">
+      </div>
+      <div class="listing__details">
+        <p class="listing__company">The Air Filter Company</p>
+        <p class="listing__job">Front-end Dev</p>
+        <p class="listing__status">
+          1mo ago * Part Time * Worldwide
+        </p>
+      </div>
+      <hr>
+      <ul class="listing__skills">
+        <li data-key="frontend">frontend</li>
+        <li data-key="junior">junior</li>
+        <li data-key="react">react</li>
+        <li data-key="sass">sass</li>
+        <li data-key="javascript">javascript</li>
+      </ul>
+    </div>
+    <!--listing-end-->
+
+  </body>
+
 </html>
